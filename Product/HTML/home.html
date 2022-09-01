@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彤彤生活料理館</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="navbar__container"> 
+        <a href="index.html" id="navbar__logo"><i class="fas fa-hamburger"></i>彤彤</i></a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+            <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="home.html" class="navbar__links">主頁Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="About.html" class="navbar__links">關於
+                    About </a>
+            </li>
+            <li class="navbar__item">
+                <a href="contact.html" class="navbar__links">聯絡Contact </a>
+            </li>
+            <li class="navbar__item">
+                <a href="menu.html" class="navbar__links">菜單Menu</a>
+            </li>
+        </ul>
+    </div>
+    <style>
+        .mySlides {display:none;}
+        </style>
+    <h1 class="home_text">相簿</h1>
+
+    <div style="text-align:center;" class="w3-content w3-display-container">
+      <img class="mySlides" src="https://vickylife.com/wp-content/uploads/thumb_20200711021006_3.jpg" style="width:50%">
+      <img class="mySlides" src="https://lh3.googleusercontent.com/NPsqxdzh3uVfYr78rKftviAGV0PZXNKWaslcuzMDkIuTvnnU73J8OL4Qctp1V9m6ryN9k5KzF6NUt5t3Qg_QWejlFzh3jgo=s600" style="width:50%">
+      <img class="mySlides" src="https://live.staticflickr.com/65535/50086107386_f581306d76_b.jpg" style="width:45%">
+      <img class="mySlides" src="https://pic.pimg.tw/as660707/1574561280-272224229_l.jpg" style="width:50%">
+    
+      <button class="w3-button" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+<h2 class="home_text_yo">Facebook貼文</h2>
+<center>
+<iframe  class="post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftongtongkitchen%2Fposts%2F1237603420013168&show_text=true&width=500" 
+width="500" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe  class="post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftongtongkitchen%2Fposts%2F1235449723561871&show_text=true&width=500" 
+width="500" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe  class="post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftongtongkitchen%2Fposts%2F1230146834092160&show_text=true&width=500" 
+width="500" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe  class="post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftongtongkitchen%2Fposts%2F1195735280866649&show_text=true&width=500" 
+width="500" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</center>
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+<footer>
+<div class="footer-content">
+<h3>彤彤生活料理館</h3>
+<p>有問題都可以私訊我們喔～</p>
+<ul class="socials">
+    <li><a href="https://www.facebook.com/tongtongkitchen/"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.instagram.com/iloveboby0716/"><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+<div class="footer-bottom">
+    <p>copyright &copy; 2020 彤彤生活料理館. designed by <span>harryhou</span></p>
+</div> 
+
+</footer>
+
+</body>
+</html>
